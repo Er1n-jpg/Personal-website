@@ -1,2 +1,3 @@
 # Personal-website
-Huge work in progress as of right now but I swear i'll work on it :DDD
+Has a base right now but not much! check here later for more progress artistically :DD
+
