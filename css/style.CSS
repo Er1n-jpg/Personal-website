@@ -1,9 +1,57 @@
 body{
     background-image : url(koi.webp);
     background-size: 100% auto;
-   
+    letter-spacing:   1px;    
+    line-height: 1.1;
+
 
 }
+
+
+
+
+
+.flex-container{
+    display: flex;
+}
+
+.boxes1 {
+     width: 400px;
+     height: 450px;
+            padding: 20px;
+            margin: 20px;
+            background:rgb(250, 239, 226);
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.button-grid {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+.grid-button {
+
+    width: 300px;
+    height: 300px;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+
+}
+
 
 h1{
     font-size: 250px;
@@ -12,6 +60,7 @@ h1{
     letter-spacing: 0;
     color:rgb(236, 223, 206);
     text-shadow: 10px 10px #477894;
+    line-height: 0.01;
 
 }
 
@@ -34,10 +83,10 @@ h3{
 }
 
 p{
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: antiquewhite;
-
+    text-shadow: 3px 3px #477894;
 
 }
 
