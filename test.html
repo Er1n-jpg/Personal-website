@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    width: 300px;
+    border: 2px solid #ccc;
+    margin-top: 20px;
+    overflow-x: scroll; /* Adds a horizontal scrollbar */
+  }
+  
+  .box {
+    min-width: 150px;
+    height: 100px;
+    background-color: #007ea7;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    flex-shrink: 0; /* Prevents boxes from shrinking and causing overflow */
+  }
+</style>
+</head>
+<body>
+
+<h1>Flexbox Overflow Example</h1>
+<p>The container below has a fixed width, but its flex items are too wide to fit. By default, with <code>flex-wrap: nowrap</code>, they overflow the container horizontally, and a scrollbar appears.</p>
+
+<div class="container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+  <div class="box">Box 4</div>
+  <div class="box">Box 5</div>
+</div>
+
+</body>
+</html>
