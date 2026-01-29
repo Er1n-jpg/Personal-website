@@ -5,8 +5,7 @@ body{
     letter-spacing:   1px;    
     line-height: 1.1;
     text-align: left;
-    padding: 0.50px;
-
+    align-items: center;
 }
 
 .longerspace{
@@ -165,6 +164,16 @@ h3{
     text-shadow: 5px 5px #477894;
     text-align: left;
 }
+h4{
+    font-size: 30px;
+    font-family: Andale Mono, monospace;
+    font-weight: 800;
+    letter-spacing: 0mm;
+    color:rgb(236, 223, 206);
+    text-shadow: 5px 5px #477894;
+    text-align: right;
+
+}
 
 p{
     font-size: 25px;
@@ -197,10 +206,23 @@ button {
 }
 
 .interestsandhobbies{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+    
+
     button {
         width: 700px;
         height: 400px;
         margin-left: 30px;
         margin-top: 50px;
+        transition: ease-out 0.3s;
+    }
+
+    button:hover{
+        width: 750px;
+        height: 450px;
+        transition: ease-in 0.3s;
     }
 }

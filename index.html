@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
 
+<audio autoplay muted id = "audio">
+      <source src  ="killtheromeo.mp3" type="audio/mpeg" id = "audio1">
+        <source src = "iconick.mp3" type = "audio/mpeg" id = "audio2">
+        <source src = "kidult.mp3" type = "audio/mpeg" id = audio3>
+    </audio>
 
+    <script>
+    var audio = document.getElementById("audio")
+    audio.volume = 0.2;
+    </script>
+
+    
     <head>
         <title> Personal-website</title>
         <link href="css/style.css" rel="stylesheet">
+       
     </head>
 
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,20 +33,20 @@
         p {
             text-align: center;
         }
+
     </style>
 
     <body>
         <header>
-            <h3>
-                Hi i'm
-            </h3>
+            <h4> Now playing: </h4>
+            <h3> Hi i'm </h3>
             <h1 class = "Bigname">
                 Erin
             </h1>
             <p>
                 Scroll down to know more about me :D (I swear im cool)
-
             </p>
+
         </header>
         <h2 class="longerspace">Projects</h2>
 
@@ -84,8 +96,8 @@
                 </div>
   
         <div class = "interestsandhobbies">
-            <button id="interests"> Find out more about what I do!</button>
-            <button id = "blog"> Read my blog!</button>
+            <button id="interests" class = "interests"> Find out more about what I do!</button>
+            <button id = "blog" class = "blog"> Read my blog!</button>
 
         </div>
 
@@ -127,6 +139,8 @@
             document.getElementById('interests').addEventListener('click', function(){window.location.href ='interestspage.HTML';});
             document.getElementById('blog').addEventListener('click', function(){window.location.href ='blogpage.html';});
         </script>
+
+       
     </body>
 
 
