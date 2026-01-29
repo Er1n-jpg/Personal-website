@@ -5,7 +5,7 @@ body{
     letter-spacing:   1px;    
     line-height: 1.1;
     text-align: left;
-
+    padding: 0.50px;
 
 }
 
@@ -26,8 +26,7 @@ body{
         text-align: center;
         margin-bottom: 20px;
         margin-top: 17px;
-        
-        
+
     }
 
     p{
@@ -40,21 +39,28 @@ body{
 
     }
     
-}
-
-.projects{
     display: grid;
-    overflow-x: scroll;
     justify-content: space-evenly;
-    grid-auto-flow: column;
+    grid-auto-flow:column;
     flex-grow: 1;
-    overscroll-behavior-inline: contain;
-    
+    overflow: hidden;
+    animation: scroll 20s linear infinite;
+
 }
 
-.projects::-webkit-scrollbar {
-  display: none;
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
+
+.projects:hover {
+    animation-play-state: paused;
+}
+
 
 
 .boxes1 {
@@ -69,6 +75,10 @@ body{
             margin-right: 5px;
             margin-left: 5px
         
+}
+.boxes1:hover{
+    width: 450px;
+    transition: ease-in-out 0.3s;
 }
 
 
@@ -126,7 +136,13 @@ h1{
     text-shadow: 10px 10px #477894;
     line-height: 0.01;
     margin-top: 250px;
-
+    transition: ease-out 0.3s;
+    
+}
+h1:hover{
+    cursor: default;
+    font-size: 285px;
+    transition: ease-in-out 0.3s;
 }
 
 h2{
