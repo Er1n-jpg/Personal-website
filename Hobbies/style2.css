@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+
+}
+@font-face {
+    font-family: myfont;
+    src: url(Outline\ Style.ttf);
+}
+h1{
+font-family: myfont;
+font-size: 100px;
+font-weight: 30;
+
+}
+
+h2{
+    font-family: 
+}
