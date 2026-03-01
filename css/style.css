@@ -8,6 +8,12 @@ body{
     align-items: center;
 }
 
+@font-face {
+    font-family: myfont2;
+    src: url(PixelifySans-VariableFont_wght.ttf);
+}
+
+
 .longerspace{
         margin-top: 300px;
         margin-bottom: 20px;
@@ -215,8 +221,53 @@ button {
 }
 
 .interestsbody{
-    background-image: url(pleaseword.jpg);
+    background-image: url(papieer.jpg);
     background-repeat: repeat;
     background-size: 100% auto;
+
+
+    h1{
+        font-family: myfont2;
+        text-align: center;
+        font-size: 200px;
+        color: #2B4352;
+        text-shadow: none;
+        font-weight: 1000;
+    }
+
+    h1:hover{
+    cursor: default;
+    font-size: 235px;
+    transition: ease-in-out 0.3s;
+    }
+
+    h2{
+        font-family: myfont2;
+
+    }
+
+    div{
+        margin-top: 27%;
+        margin-bottom:50%;
+    }
+
+    button{
+        background-color: transparent;
+        transition: ease-out 0.2s;
+    }
+
+    button:hover{
+        transform: Scale(1.2);
+        transition: ease-in-out 0.3s;
+    }
+    
 }
+
+.button1{
+    position: absolute;
+    right: 10px;
+    top:15px;
+
+}
+
 

@@ -4,7 +4,7 @@ body{
 }
 @font-face {
     font-family: myfont;
-    src: url(Outline\ Style.ttf);
+    src: url(PixelifySans-VariableFont_wght.ttf);
 }
 h1{
 font-family: myfont;
