@@ -2,16 +2,21 @@
 const audio1 = document.getElementById("audio")
 const audio2 = document.getElementById("audio2")
 const audio3 = document.getElementById("audio3")
-const button1 = document.getElementById("button1")
-const button2 = document.getElementById("button2")
+const skip = document.getElementById("button1")
+const back = document.getElementById("button2")
 const songtitle = document.getElementById("Songtitle")
 
+var yes = true
+console.log(songtitle)
+
+
+start()
 const playlist = [
     {title: "Kill the romeo", artist: "Zerobaseone", audioElement: audio1},
     {title: "Iconick", artist: "Zerobaseone", audioElement: audio2},
     {title: "Kidult", artist: "SEVENTEEN", audioElement: audio3}
 ]
-var currentTrack = 0;
+var currentTrack = 2;
 var applicationopen = true;
 
 
@@ -20,7 +25,7 @@ function shuffle(){
     currentTrack = randomizedvalue
 }
 
-function updatesong (index){
+function updatesong(index){
     const song = playlist[index]
     songtitle.textContent = song.title
 
@@ -41,6 +46,9 @@ function playcurrentrack(){
     playlist[currentTrack].audioElement.play()
     console.log('started')
 
+    skip.addEventListener("click", () => {
+    skipsong();
+    })
 }
 
 function start(){
@@ -66,3 +74,4 @@ function reversesong(){
 
 
 }
+

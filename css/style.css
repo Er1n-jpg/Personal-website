@@ -270,4 +270,14 @@ button {
 
 }
 
+.playbuttons{
+    button:hover{
+        background-color:#e7d9b8;
+
+    }
+    button:focus{
+        background-color:#477894;
+    }
+}
+
 
