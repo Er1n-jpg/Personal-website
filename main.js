@@ -1,5 +1,5 @@
 
-const audio1 = document.getElementById("audio")
+const audio1 = document.getElementById("audio1")
 const audio2 = document.getElementById("audio2")
 const audio3 = document.getElementById("audio3")
 const skip = document.getElementById("button1")
@@ -10,19 +10,19 @@ var yes = true
 console.log(songtitle)
 
 
-start()
 const playlist = [
     {title: "Kill the romeo", artist: "Zerobaseone", audioElement: audio1},
     {title: "Iconick", artist: "Zerobaseone", audioElement: audio2},
     {title: "Kidult", artist: "SEVENTEEN", audioElement: audio3}
 ]
-var currentTrack = 2;
+skip.addEventListener("click", () => skipsong())
+back.addEventListener("click", () => reversesong())
+var currentTrack = 1;
 var applicationopen = true;
 
 
 function shuffle(){
-    let randomizedvalue = Math.random() * 3
-    currentTrack = randomizedvalue
+    currentTrack = Math.floor(Math.random() * playlist.length)
 }
 
 function updatesong(index){
@@ -41,14 +41,10 @@ function playcurrentrack(){
     audio3.volume = 0.5
 
     updatesong(currentTrack)
-    playlist[currentTrack].play;
-    
     playlist[currentTrack].audioElement.play()
-    console.log('started')
+    console.log('Now playing:', playlist[currentTrack].title)
 
-    skip.addEventListener("click", () => {
-    skipsong();
-    })
+
 }
 
 function start(){
@@ -58,20 +54,13 @@ function start(){
 } 
 
 function skipsong(){
-    if (index < playlist.length){
-    const song = playlist[index + 1]
-    } else {
-        const song = playlist[1]
-    }
+    currentTrack = (currentTrack + 1) % playlist.length
+    playcurrentrack()
 }
 
 function reversesong(){
-    if (index > 1){
-    const song = playlist[index - 1]
-    } else{
-    const song = playlist[playlist.length];
-    }
-
+    currentTrack = (currentTrack - 1 + playlist.length) % playlist.length
+    playcurrentrack()
 
 }
 
