@@ -17,7 +17,7 @@ const playlist = [
 ]
 skip.addEventListener("click", () => skipsong())
 back.addEventListener("click", () => reversesong())
-var currentTrack = 1;
+var currentTrack = 0;
 var applicationopen = true;
 
 
@@ -43,7 +43,7 @@ function playcurrentrack(){
     updatesong(currentTrack)
     playlist[currentTrack].audioElement.play()
     console.log('Now playing:', playlist[currentTrack].title)
-
+    
 
 }
 
