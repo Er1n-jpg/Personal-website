@@ -4,7 +4,9 @@ const audio2 = document.getElementById("audio2")
 const audio3 = document.getElementById("audio3")
 const skip = document.getElementById("button1")
 const back = document.getElementById("button2")
+const play = document.getElementById("button3")
 const songtitle = document.getElementById("Songtitle")
+const 
 
 var yes = true
 console.log(songtitle)
@@ -19,6 +21,7 @@ skip.addEventListener("click", () => skipsong())
 back.addEventListener("click", () => reversesong())
 var currentTrack = 0;
 var applicationopen = true;
+var buttonpressed = true;
 
 
 function shuffle(){
@@ -31,6 +34,9 @@ function updatesong(index){
 
 }
 
+button3.addEventListener('click', function(){
+    if (proje)
+})
 function playcurrentrack(){
     audio1.pause()
     audio2.pause()
