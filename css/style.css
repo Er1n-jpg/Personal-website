@@ -16,6 +16,47 @@ body{
     src: url(PixelifySans-VariableFont_wght.ttf);
 }
 
+.topheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songtext{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.playbuttons{
+
+    button{
+        background-color: transparent;
+        width: 90px;
+        height: 90px;
+        padding: 20px;
+        display: wrap;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    button img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    button:hover {
+        height: 95px;
+        width: 95px;
+    }
+
+    gap: 50px;
+    align-items: right;
+    margin-left: auto;
+    padding-top: 0%;
+}
+
 
 .longerspace{
         margin-top: 300px;
@@ -24,49 +65,8 @@ body{
         margin-left: 20px;
 }
 
-.Projects{
 
-    h3{
-        font-size: 50px;
-        font-family: Andale Mono, monospace;
-        font-weight: bold;
-        text-shadow: none;
-        color: rgb(71, 123, 158);
-        text-align: center;
-        margin-bottom: 20px;
-        margin-top: 17px;
-
-    }
-
-    p{
-        font-family: Andale Mono, monospace;
-        font-weight: 400;
-        color: rgb(71, 123, 158);
-        text-shadow: none;
-        text-align:left;
-
-    }
-    display: flex;
-    flex-wrap: nowrap;
-    width: max-content;
-    animation: scroll 15s linear infinite;
-
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-
-
-
-
-
+/* idk what this is probably early development in october */
 .boxes1 {
      width: 400px;
      height: 450px;
@@ -163,6 +163,68 @@ button {
     border-radius: 25px;
 }
 
+/*projects*/
+
+.Projects{
+
+    h3{
+        font-size: 50px;
+        font-family: Andale Mono, monospace;
+        font-weight: bold;
+        text-shadow: none;
+        color: rgb(71, 123, 158);
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 17px;
+
+    }
+
+    p{
+        font-family: Andale Mono, monospace;
+        font-weight: 400;
+        color: rgb(71, 123, 158);
+        text-shadow: none;
+        text-align:left;
+
+    }
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+    animation: scroll 15s linear infinite;
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+    
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+
+
+.projectcontainer{
+    overflow: hidden;
+    
+    img{
+        max-width: 80px;
+        color: #477894;
+    }
+}
+
+.projectcontainer:hover .Projects {
+    animation-play-state: paused;
+}
+
+/* interests */
+
 .interests{
     button{
         width: 350px;
@@ -174,13 +236,13 @@ button {
 
 .interestsandhobbies{
     display: flex;
-    padding: 20px;
+    padding: 40px;
     align-items: center;
     justify-items: center;
     
 
     button {
-        width: 700px;
+        width: 50%;
         height: 400px;
         margin-left: 30px;
         margin-top: 50px;
@@ -189,7 +251,7 @@ button {
     }
 
     button:hover{
-        width: 750px;
+        width: 55%;
         height: 450px;
         transition: ease-in 0.3s;
     }
@@ -197,48 +259,6 @@ button {
 
 }
 
-.tools{
-    h2{
-        margin-bottom: 50px;
-        text-align: center;
-        margin-top: 20px;
-        color:#477894;
-        text-shadow: none;
-    }
-
-    p{
-        color:#477894;
-        text-shadow: none;  
-        font-family:Andale Mono, monospace; 
-    }
-    
-    padding: 40px;
-    padding-bottom: 70px;
-
-    button{
-        width: 200px;
-        height:200px;
-        margin-bottom: 20px;
-        margin-right: 15px;
-        transition: ease-out 0.2s;
-    }
-
-    button img{
-        width: 100%;
-        height: 90%;
-        position: center;
-    }
-
-    button:hover{
-        width: 220px;
-        height: 220px;
-        transition: ease-in-out 0.2s;
-    }
-
-    background-color: antiquewhite ;
-    margin-top: 50px;
-    margin-bottom: 90px;
-}
 
 .interestsbody{
     background-image: url(papieer.jpg);
@@ -283,62 +303,52 @@ button {
     
 }
 
-.button1{
-    position: absolute;
-    right: 10px;
-    top:15px;
+/*tools*/
 
-}
-
-.playbuttons{
-
-        button{
-        background-color: transparent;
-        width: 90px;
-        height: 90px;
-        padding: 20px;
-        display: wrap;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-
+.tools{
+    h2{
+        margin-bottom: 50px;
+        text-align: center;
+        margin-top: 20px;
+        color:#477894;
+        text-shadow: none;
     }
 
-    button img {
+    p{
+        color:#477894;
+        text-shadow: none;  
+        font-family:Andale Mono, monospace; 
+    }
+    
+    padding: 40px;
+    padding-bottom: 70px;
+
+    button{
+        width: 200px;
+        height:200px;
+        margin-bottom: 20px;
+        margin-right: 15px;
+        transition: ease-out 0.2s;
+    }
+
+    button img{
         width: 100%;
-        height: 100%;
-        object-fit: contain;
+        height: 90%;
+        position: center;
     }
 
-    button:hover {
-        height: 95px;
-        width: 95px;
+    button:hover{
+        width: 220px;
+        height: 220px;
+        transition: ease-in-out 0.2s;
     }
 
+    background-color: antiquewhite ;
+    margin-top: 50px;
+    margin-bottom: 90px;
 }
 
-
-    
-section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    }
-
-
-.projectcontainer{
-    overflow: hidden;
-    
-    img{
-        max-width: 80px;
-        color: #477894;
-    }
-}
-
-.projectcontainer:hover .Projects {
-    animation-play-state: paused;
-}
-
+/*contacts*/
 .Contactme{
     img{
 
@@ -352,3 +362,5 @@ section{
         gap: 50px;
         padding-top:10px;
 }
+
+/* interests page */
