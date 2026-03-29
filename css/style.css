@@ -341,11 +341,6 @@ section{
         line-height: 1;
     }
 
-    h1:hover{
-    cursor: default;
-    font-size: 235px;
-    transition: ease-in-out 0.3s;
-    }
 
     h2{
         font-family: myfont2;
@@ -364,12 +359,14 @@ section{
     grid-template-rows: repeat(3,1fr);
     position:relative;
     min-height: 400px;
+    overflow: visible;
 
     h1{
         grid-column: 2;
         grid-row: 2;
         text-align: center;
-
+        z-index: 2;
+        font-size: 230px;
     }
 }
 
@@ -378,15 +375,18 @@ section{
     grid-column: 3;
     grid-row: 1;
     transform: rotate(15deg);  
+    height: 578.42px;
+    width: 676.08px;
 }
 
 .art{
     position: absolute;
-    grid-column: 1;
-    grid-row: 3;
-    transform: rotate(10deg);
+    left: -9%;
+    top: 36%;
+    transform: rotate(5deg);
     height: 691px;
     width: 691px;
+    z-index: 1;
 }
 
 .photography{
@@ -399,7 +399,25 @@ section{
     height: 292.23px;
 }
 
+.music{
+    position: absolute;
+    top:60%;
+    left: 14%;
+    transform: rotate(15deg);
+    height: 500px;
+    width: 500px;
+}
 
+
+.newspaper{
+    top: 0%;
+    left: 0%;
+}
+
+.hackclub{
+    height: 578.42px;
+    width: 676.08px;
+}
 
 * {
     box-sizing: border-box;
