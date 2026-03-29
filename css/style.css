@@ -11,10 +11,6 @@ body{
     padding:0%;
 }
 
-@font-face {
-    font-family: myfont2;
-    src: url(PixelifySans-VariableFont_wght.ttf);
-}
 
 .topheader{
     display: flex;
@@ -23,12 +19,38 @@ body{
 }
 
 .songtext{
-    display: flex;
     align-items: center;
-    padding-bottom: 10px;
+    padding-bottom: 5%;
+    padding-left: 30px;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.songsection{
+    height: auto;
+    width: clamp(400px,28vw,527px);
+    background-color: antiquewhite;
+    opacity: 80%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
+
+    h4{
+        color:#477894;
+        text-shadow: none;
+        padding-bottom: 0%;
+        margin: 0;
+        padding: 0;
+        opacity: 100%;
+    }
 }
 .playbuttons{
-
     button{
         background-color: transparent;
         width: 90px;
@@ -38,23 +60,28 @@ body{
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        transition: ease-in-out 0.2s;
+        opacity: 100%;
     }
 
     button img {
         width: 100%;
         height: 100%;
         object-fit: contain;
+        opacity: 100%;
     }
 
     button:hover {
         height: 95px;
         width: 95px;
+        transition: ease-in-out 0.2s;
     }
 
     gap: 50px;
-    align-items: right;
-    margin-left: auto;
+    align-items: center;
     padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
 
@@ -68,8 +95,8 @@ body{
 
 /* idk what this is probably early development in october */
 .boxes1 {
-     width: 400px;
-     height: 450px;
+     width: 450px;
+     height: 470px;
             margin: 20px;
             background:rgb(250, 239, 226);
             border-radius: 20px;
@@ -77,16 +104,13 @@ body{
             padding: 30px;
             margin-right: 5px;
             margin-left: 5px;
-    min-width: 400px;
+    min-width: 450px;
     flex-shrink: 0;
     transition: ease-in-out
 
-
-        
-        
 }
 .boxes1:hover{
-    width: 450px;
+    width: 480px;
     transition: ease-in-out 0.3s;
 }
 
@@ -254,13 +278,10 @@ section{
         width: 55%;
         height: 450px;
         transition: ease-in 0.3s;
+        transform: rotate(5deg);
     }
 
-
 }
-
-
-
 
 /*tools*/
 
@@ -320,107 +341,5 @@ section{
         padding-bottom: 60px;
         gap: 50px;
         padding-top:10px;
-}
-
-/* interests page */
-.interestsbody{
-    background-image: url(papieer.jpg);
-    background-repeat: repeat;
-    background-size: 100% auto;
-
-
-    h1{
-        font-family: myfont2;
-        text-align: center;
-        font-size: clamp(10px,10vw,200px);
-        color: #2B4352;
-        text-shadow: none;
-        font-weight: 1000;
-        margin-top: 20px !important;
-        margin-bottom: 20px !important;
-        line-height: 1;
-    }
-
-
-    h2{
-        font-family: myfont2;
-        font-size: clamp(25px, 5vw, 80px);
-    }
-
-    button{
-        background-color: transparent;
-        transition: ease-out 0.2s;
-    }
-
-}
-.Hobbies{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    position:relative;
-    min-height: 400px;
-    overflow: visible;
-
-    h1{
-        grid-column: 2;
-        grid-row: 2;
-        text-align: center;
-        z-index: 2;
-        font-size: 230px;
-    }
-}
-
-.Frc{
-    position: absolute;
-    grid-column: 3;
-    grid-row: 1;
-    transform: rotate(15deg);  
-    height: 578.42px;
-    width: 676.08px;
-}
-
-.art{
-    position: absolute;
-    left: -9%;
-    top: 36%;
-    transform: rotate(5deg);
-    height: 691px;
-    width: 691px;
-    z-index: 1;
-}
-
-.photography{
-    position: absolute;
-    bottom: 5%;
-    left: 40%;
-    transform: rotate (15deg);
-    z-index: 1;
-    width: 480.44px;
-    height: 292.23px;
-}
-
-.music{
-    position: absolute;
-    top:60%;
-    left: 14%;
-    transform: rotate(15deg);
-    height: 500px;
-    width: 500px;
-}
-
-
-.newspaper{
-    top: 0%;
-    left: 0%;
-}
-
-.hackclub{
-    height: 578.42px;
-    width: 676.08px;
-}
-
-* {
-    box-sizing: border-box;
-    max-width: 100%;
 }
 

@@ -36,12 +36,12 @@ function updatesong(index){
 }
 
 button3.addEventListener('click', function(){
-    if (projects.style.animationPlayState === 'paused'){
-        projects.style.animationPlayState = 'running';
+    if (yes){
+        yes = false
         playcurrentrack()
         pausedplayimg.src = 'Images/Play.png'
     } else {
-        projects.style.animationPlayState = 'paused';
+        yes = true
         pausesong()
         pausedplayimg.src = 'Images/Paused.png'
 
@@ -53,9 +53,9 @@ function playcurrentrack(){
     audio2.pause()
     audio3.pause()
 
-    audio1.volume = 0.5
-    audio2.volume = 0.5
-    audio3.volume = 0.5
+    audio1.volume = 0.3
+    audio2.volume = 0.3
+    audio3.volume = 0.3
 
     updatesong(currentTrack)
     playlist[currentTrack].audioElement.play()
