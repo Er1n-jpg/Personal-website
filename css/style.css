@@ -260,48 +260,7 @@ section{
 }
 
 
-.interestsbody{
-    background-image: url(papieer.jpg);
-    background-repeat: repeat;
-    background-size: 100% auto;
 
-
-    h1{
-        font-family: myfont2;
-        text-align: center;
-        font-size: 200px;
-        color: #2B4352;
-        text-shadow: none;
-        font-weight: 1000;
-    }
-
-    h1:hover{
-    cursor: default;
-    font-size: 235px;
-    transition: ease-in-out 0.3s;
-    }
-
-    h2{
-        font-family: myfont2;
-
-    }
-
-    div{
-        margin-top: 27%;
-        margin-bottom:50%;
-    }
-
-    button{
-        background-color: transparent;
-        transition: ease-out 0.2s;
-    }
-
-    button:hover{
-        transform: Scale(1.2);
-        transition: ease-in-out 0.3s;
-    }
-    
-}
 
 /*tools*/
 
@@ -364,3 +323,86 @@ section{
 }
 
 /* interests page */
+.interestsbody{
+    background-image: url(papieer.jpg);
+    background-repeat: repeat;
+    background-size: 100% auto;
+
+
+    h1{
+        font-family: myfont2;
+        text-align: center;
+        font-size: clamp(10px,10vw,200px);
+        color: #2B4352;
+        text-shadow: none;
+        font-weight: 1000;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        line-height: 1;
+    }
+
+    h1:hover{
+    cursor: default;
+    font-size: 235px;
+    transition: ease-in-out 0.3s;
+    }
+
+    h2{
+        font-family: myfont2;
+        font-size: clamp(25px, 5vw, 80px);
+    }
+
+    button{
+        background-color: transparent;
+        transition: ease-out 0.2s;
+    }
+
+}
+.Hobbies{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    position:relative;
+    min-height: 400px;
+
+    h1{
+        grid-column: 2;
+        grid-row: 2;
+        text-align: center;
+
+    }
+}
+
+.Frc{
+    position: absolute;
+    grid-column: 3;
+    grid-row: 1;
+    transform: rotate(15deg);  
+}
+
+.art{
+    position: absolute;
+    grid-column: 1;
+    grid-row: 3;
+    transform: rotate(10deg);
+    height: 691px;
+    width: 691px;
+}
+
+.photography{
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    transform: rotate (15deg);
+    z-index: 1;
+    width: 480.44px;
+    height: 292.23px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
