@@ -6,7 +6,8 @@ const skip = document.getElementById("button1")
 const back = document.getElementById("button2")
 const play = document.getElementById("button3")
 const songtitle = document.getElementById("Songtitle")
-const 
+const projects = document.querySelector('.Projects')
+const pausedplayimg = document.getElementById("pauseplayed")
 
 var yes = true
 console.log(songtitle)
@@ -35,8 +36,18 @@ function updatesong(index){
 }
 
 button3.addEventListener('click', function(){
-    if (proje)
+    if (projects.style.animationPlayState === 'paused'){
+        projects.style.animationPlayState = 'running';
+        playcurrentrack()
+        pausedplayimg.src = 'Images/Play.png'
+    } else {
+        projects.style.animationPlayState = 'paused';
+        pausesong()
+        pausedplayimg.src = 'Images/Paused.png'
+
+    }
 })
+
 function playcurrentrack(){
     audio1.pause()
     audio2.pause()
@@ -68,5 +79,11 @@ function reversesong(){
     currentTrack = (currentTrack - 1 + playlist.length) % playlist.length
     playcurrentrack()
 
+}
+
+function pausesong(){
+    audio1.pause()
+    audio2.pause()
+    audio3.pause()
 }
 
