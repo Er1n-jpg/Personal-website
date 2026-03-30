@@ -92,6 +92,33 @@ body{
         margin-left: 20px;
 }
 
+.downarr{
+    background-color: transparent;
+    border: none;
+
+    img{
+    max-width: 200px;
+    max-height: 200px;
+    padding-left: 50%;
+    transition: ease-in-out 0.5s;
+    }
+    
+}
+
+.downarr:hover{
+    img{
+    max-width: 220px;
+    max-height: 220px;
+    transition: ease-in-out 0.5s;
+    }
+}
+
+.ineedflex{
+    padding-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* idk what this is probably early development in october */
 .boxes1 {
