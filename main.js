@@ -8,6 +8,7 @@ const play = document.getElementById("button3")
 const songtitle = document.getElementById("Songtitle")
 const projects = document.querySelector('.Projects')
 const pausedplayimg = document.getElementById("pauseplayed")
+const fastforward = document.getElementById("buttonff")
 
 var yes = true
 console.log(songtitle)
@@ -86,4 +87,10 @@ function pausesong(){
     audio2.pause()
     audio3.pause()
 }
+
+function gotobreakpoint(){
+    document.querySelector('#breakpoint').scrollIntoView( { behavior: 'smooth'})
+}
+
+
 
