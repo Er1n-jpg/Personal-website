@@ -96,11 +96,12 @@ body{
     background-color: transparent;
     border: none;
 
+
     img{
     max-width: 200px;
     max-height: 200px;
-    padding-left: 50%;
-    transition: ease-in-out 0.5s;
+    padding-left: 0%;
+    transition: ease-in-out 0.2s;
     }
     
 }
@@ -109,7 +110,7 @@ body{
     img{
     max-width: 220px;
     max-height: 220px;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.2s;
     }
 }
 
